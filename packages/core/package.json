@@ -2,7 +2,7 @@
   "name": "@pokemon-game/core",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@8.1.1",
+  "packageManager": "pnpm@7.12.0",
   "description": "",
   "author": "Ikomom <ikonon557@gmail.com>",
   "license": "MIT",

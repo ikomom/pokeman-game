@@ -12,7 +12,7 @@ importers:
       eslint: ^8.37.0
       esno: ^0.16.3
       lint-staged: ^13.2.0
-      pnpm: ^8.1.1
+      pnpm: ^7.12.0
       rimraf: ^4.4.1
       simple-git-hooks: ^2.8.1
       typescript: ^5.0.3
@@ -28,7 +28,7 @@ importers:
       eslint: 8.39.0
       esno: 0.16.3
       lint-staged: 13.2.1
-      pnpm: 8.3.1
+      pnpm: 7.32.2
       rimraf: 4.4.1
       simple-git-hooks: 2.8.1
       typescript: 5.0.4
@@ -3354,9 +3354,9 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm/8.3.1:
-    resolution: {integrity: sha512-0mT2ZAv08J3nz8xUdWhRW88GE89IWgPo/xZhb6acQXK2+aCikl7kT7Bg31ZcnJqOrwYXSed68xjLd/ZoSnBR8w==}
-    engines: {node: '>=16.14'}
+  /pnpm/7.32.2:
+    resolution: {integrity: sha512-PfosE4b8keWHVrO+z4d+ncIIQK9ypTAdRTrk2ioZ2wDN0I9L+mapzJVldVqsZdy7vakyMtxfknN2cn5wjESbvg==}
+    engines: {node: '>=14.6'}
     hasBin: true
     dev: true
 
