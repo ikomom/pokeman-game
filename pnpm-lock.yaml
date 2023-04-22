@@ -39,6 +39,9 @@ importers:
   packages/core:
     specifiers: {}
 
+  packages/shared:
+    specifiers: {}
+
   playground:
     specifiers:
       kaboom: 3000.0.0-beta.3
