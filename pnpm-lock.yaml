@@ -39,6 +39,12 @@ importers:
   packages/core:
     specifiers: {}
 
+  playground:
+    specifiers:
+      kaboom: 3000.0.0-beta.3
+    dependencies:
+      kaboom: 3000.0.0-beta.3
+
 packages:
 
   /@ampproject/remapping/2.2.1:
@@ -2779,6 +2785,10 @@ packages:
     optionalDependencies:
       graceful-fs: 4.2.11
     dev: true
+
+  /kaboom/3000.0.0-beta.3:
+    resolution: {integrity: sha512-V4YyulJFFB+VLLZPevuc7Hu7E7WfszGI+zVGn1GqdzPmUYV3mDKOmfO9+aNLT1sy5K0s0ZDVwNK5Pa3bWUzRyA==}
+    dev: false
 
   /kleur/3.0.3:
     resolution: {integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==}
