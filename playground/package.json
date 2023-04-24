@@ -19,5 +19,8 @@
   },
   "dependencies": {
     "melonjs": "^15.1.1"
+  },
+  "devDependencies": {
+    "@melonjs/debug-plugin": "^14.5.1"
   }
 }

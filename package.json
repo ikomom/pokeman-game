@@ -14,7 +14,7 @@
   "bugs": "https://github.com/ikomom/pokeman-game/issues",
   "keywords": [],
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint . --fix",
     "build": "pnpm -r run build",
     "prepublishOnly": "nr build",
     "release": "bumpp && npm publish",
