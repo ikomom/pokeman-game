@@ -1,7 +1,7 @@
 import type { KaboomCtx } from 'kaboom'
 import type { WorldState } from '../core/types'
 
-export function setWorld(instance: KaboomCtx, worldState: WorldState) {
+export function setWorld(this: KaboomCtx, worldState: WorldState) {
   const {
     sprite,
     addLevel,
@@ -28,7 +28,7 @@ export function setWorld(instance: KaboomCtx, worldState: WorldState) {
     opacity,
     easings,
     go,
-  } = instance
+  } = this
 
   function makeTile(type?: string) {
     return [

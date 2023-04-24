@@ -1,6 +1,7 @@
 {
   "extends": "@antfu",
   "rules": {
-    "no-console": "warn"
+    "no-console": "warn",
+    "@typescript-eslint/no-invalid-this": "off"
   }
 }

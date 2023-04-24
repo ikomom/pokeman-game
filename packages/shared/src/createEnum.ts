@@ -15,6 +15,16 @@ type StringOrNum<T> = T extends string
   : T extends number
     ? number
     : never
+
+/**
+ * 创建枚举
+ * createEnum([
+ ['ONE', 2, '开始'],
+ ['TWO', '3', 2],
+ ])
+ * @param args
+ * @link https://www.typescriptlang.org/play?#code/KYDwDg9gTgLgBDAnmYcCqA7AlhDAVCASQxmCgGdgBjGHDAHjQD44BeOACgCg505RSGACbk4AQwyI4Afk4BrAFzoAlGxYA3CFiFwlGYOrJdVA4MNEdFcLBgBmZOIVWsNWoTxmOPeg2QDcXFxIKHAAwlDAYqQAohgArgC29Hgs7Hj8IIIicADaNvZQcNEANNZ2DgDSpfkOADIAuh6ymHQExKQU1LS49ADeHry8OXLAUjZFcABkcOQwUDYA5vVKFQGDcAC+TN5w+oZQAUHIqADKc4sA8lAAconJqXDppuYz5xgLTa-z7ztPmWbZeIJABGRl4siBoKgOz2-i4tjiGBodDgVAiUWAsTuHgqGSyolm3wWxQ8ADU8QCCW8FnAAD67RJQkm8WrMx4Ul45KpwUmlBokpjcXhiKALchKdFCXAAGykeBy9RJyiUACVIlKMLL6B4Wrg2iQyJRkT1wpEYkD7ixpv11gtgDBLKMlGciVdbkl5QBGepMZWPHIAJnqa0G0qwsyUNvWcHUYmlcWAzupbruXp9IfW0rEoOlSnlQYzmwVIY2XBYUaouFmcAgwIAVmw4Bd610AHRos3ADjxaXS5QhysYasJMRgRv6ADucAAsqP6Ly4LVBf2PIPq2GI3Ao7xY-HEzzC1mc0paiWFY3i4FeLZoJw1-AcsBSnJStL6jXbOJReRVNua-XH3fdg5ELEcwFbSgHRfOA+0PcMYFbMA4nIAALDg-x3OMEyUF8BlDbNgFzGC2V4DYV1IjwIhgOIoAwJsWxoVtbAiYAAC8uz-VsuNrOsSLgO0YCUMDWwEviNxgNkyICUsuHvfiATILEEkbDsMSUjgcg8HIAHILmuaJtNKANSm0wAAfUAac1tMVLTtLwAB1C5DLgbSAGYnKDEl6hXLg7WERSgVbPToiAA
+ */
 export function createEnum<
   K extends string, V extends string | number, L, T extends [K, V, L],
 >(

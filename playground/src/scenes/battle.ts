@@ -1,7 +1,7 @@
 import type { ColorComp, GameObj, KaboomCtx, PosComp, RectComp } from 'kaboom'
 import type { WorldState } from '../core/types'
 
-export function setBattle(instance: KaboomCtx, worldState: WorldState) {
+export function setBattle(this: KaboomCtx, worldState: WorldState) {
   const {
     add,
     sprite,
@@ -18,7 +18,7 @@ export function setBattle(instance: KaboomCtx, worldState: WorldState) {
     onUpdate,
     go,
     vec2,
-  } = instance
+  } = this
 
   add([
     sprite('battle-background'),
