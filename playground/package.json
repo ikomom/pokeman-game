@@ -18,6 +18,6 @@
     "build": "vite build"
   },
   "dependencies": {
-    "kaboom": "3000.0.0-beta.3"
+    "melonjs": "^15.1.1"
   }
 }
