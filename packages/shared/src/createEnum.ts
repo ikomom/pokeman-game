@@ -55,7 +55,7 @@ export function createEnum<
   }
   return Object.freeze({
     ...obj,
-    get: map.get,
+    getLabel(value: V) { return map.get(value) },
     list,
   })
 }

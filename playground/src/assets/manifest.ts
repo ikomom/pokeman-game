@@ -1,6 +1,7 @@
 // a melonJS data manifest
 // note : this is note a webpack manifest
 const DataManifest = [
+  //Bitmap Font
   {
     name: 'PressStart2P',
     type: 'image',
@@ -11,10 +12,23 @@ const DataManifest = [
     type: 'binary',
     src: './fnt/PressStart2P.fnt',
   },
+  // images
+  { name: "tileset",         type:"image",   src: "./img/tileset.png" },
+  { name: "background",      type:"image",   src: "./img/background.png" },
+  { name: "clouds",          type:"image",   src: "./img/clouds.png" },
+
+  // tileset
+  { name: 'tileset', type: 'tsx', src: './map/tileset.json' },
+  // map
+  { name: 'map1', type: 'tmx', src: './map/map1.tmx' },
+  // texturePacker
+  { name: "texture",         type: "json",   src: "./img/texture.json" },
+  { name: "texture",         type: "image",  src: "./img/texture.png" },
+
 ]
   .map(item => ({
     ...item,
-    src: new URL(item.src, import.meta.url),
+    src: new URL(item.src, import.meta.url).toString(),
   }))
 
 export default DataManifest

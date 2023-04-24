@@ -1,13 +1,15 @@
 import {
   audio,
   device,
+  game,
   loader,
-  plugin,
-  pool,
+  plugin, pool,
   state,
-  utils,
-  video,
+  utils, video,
 } from 'melonjs'
+import FlyEnemyEntity from '@/script/renderables/fly'
+import SlimeEnemyEntity from '@/script/renderables/slime'
+import CoinEntity from '@/script/renderables/coin'
 
 import './main.css'
 
@@ -19,13 +21,13 @@ import TitleScreen from '@/script/stage/title.js'
 
 device.onReady(() => {
   // initialize the display canvas once the device/browser is ready
-  if (!video.init(1218, 562, { parent: 'app', scale: 'auto' })) {
+  if (!video.init(1218, 562, { parent: 'app', scale: 'auto', renderer: video.AUTO })) {
     alert('Your browser does not support HTML5 canvas.')
     return
   }
 
   // initialize the debug plugin in development mode.
-  if (import.meta.env.DEV === 'development') {
+  if (import.meta.env.DEV) {
     import('@melonjs/debug-plugin').then((debugPlugin) => {
       // automatically register the debug panel
       utils.function.defer(plugin.register, this, debugPlugin.DebugPanelPlugin, 'debugPanel')
@@ -40,12 +42,23 @@ device.onReady(() => {
 
   // set and load all resources.
   loader.preload(DataManifest as any, () => {
+    state.set(state.PLAY, new PlayScreen())
+    state.transition('fade', '#FFFFFF', 250)
     // set the user defined game stages
     state.set(state.MENU, new TitleScreen())
-    state.set(state.PLAY, new PlayScreen())
 
     // add our player entity in the entity pool
     pool.register('mainPlayer', PlayerEntity)
+    pool.register('SlimeEntity', SlimeEnemyEntity)
+    pool.register('FlyEntity', FlyEnemyEntity)
+    pool.register('CoinEntity', CoinEntity, true)
+
+    // game
+    console.log('game', game)
+    // game.texture = new TextureAtlas(
+    //   loader.getJSON('texture'),
+    //   loader.getImage('texture'),
+    // )
 
     // Start the game.
     state.change(state.PLAY, false)

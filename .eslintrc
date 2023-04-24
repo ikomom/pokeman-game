@@ -3,5 +3,6 @@
   "rules": {
     "no-console": "warn",
     "@typescript-eslint/no-invalid-this": "off"
-  }
+  },
+  "ignorePatterns": ["assets"]
 }
