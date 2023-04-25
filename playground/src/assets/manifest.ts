@@ -12,6 +12,9 @@ const DataManifest = [
     type: 'binary',
     src: './fnt/PressStart2P.fnt',
   },
+  // audio
+  { name: "dst-gameforest",  type: "audio", src: "./bgm/" },
+
   // images
   { name: "tileset",         type:"image",   src: "./img/tileset.png" },
   { name: "background",      type:"image",   src: "./img/background.png" },

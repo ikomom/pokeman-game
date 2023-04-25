@@ -5,7 +5,11 @@ class PlayScreen extends Stage {
      *  action to perform on state change
      */
   onResetEvent() {
+    console.log('onResetEvent')
     level.load('map1')
+
+    // audio.playTrack('dst-gameforest')
+
     // add a gray background to the default Stage
     // game.world.addChild(new ColorLayer('background', '#202020'))
 
