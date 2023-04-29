@@ -45,11 +45,11 @@ importers:
   playground:
     specifiers:
       '@melonjs/debug-plugin': ^14.5.1
-      melonjs: ^15.1.1
+      melonjs: ^15.1.4
     dependencies:
-      melonjs: 15.1.1
+      melonjs: 15.1.4
     devDependencies:
-      '@melonjs/debug-plugin': 14.5.1_melonjs@15.1.1
+      '@melonjs/debug-plugin': 14.5.1_melonjs@15.1.4
 
 packages:
 
@@ -686,13 +686,13 @@ packages:
       type-detect: 4.0.8
     dev: true
 
-  /@melonjs/debug-plugin/14.5.1_melonjs@15.1.1:
+  /@melonjs/debug-plugin/14.5.1_melonjs@15.1.4:
     resolution: {integrity: sha512-Ju2fZYR6bPVYXvLdwP0QnK41lxdl/nRuD9nFPnRYpIlPXaZ4EUpioldn7YpwMo07JrVl2P1G0uI4Cgo9FJQeOQ==}
     engines: {node: '>= 19'}
     peerDependencies:
       melonjs: ^15.0.0
     dependencies:
-      melonjs: 15.1.1
+      melonjs: 15.1.4
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:
@@ -2973,8 +2973,8 @@ packages:
     resolution: {integrity: sha512-AW4DRS3QbBayY/jJmD8437V1Gombjf8RSOUCMFBuo5iHi58AGEgVCKQ+ezHkZZDpAQS75hcBMpLqjpJTjtUL7w==}
     dev: true
 
-  /melonjs/15.1.1:
-    resolution: {integrity: sha512-rUA9ETjLNuui5TOBSuLurMHjzpx8CxzRnutZ1bZ+7WfIAEIUa5zz4mcYQ5e7Xt87Qh5Xhf5PfQIqecOHzLl33g==}
+  /melonjs/15.1.4:
+    resolution: {integrity: sha512-1FjZnzOgeJhGgCtFjFPgYwfY+BiUQdDBX+RFLXWINvowDSSEofwRAKQw8PNuAATO8mRc0+LcBC+QAcQG8zakdw==}
     engines: {node: '>= 19'}
     dependencies:
       '@teppeis/multimaps': 3.0.0

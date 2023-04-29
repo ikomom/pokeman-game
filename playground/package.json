@@ -18,7 +18,7 @@
     "build": "vite build"
   },
   "dependencies": {
-    "melonjs": "^15.1.1"
+    "melonjs": "^15.1.4"
   },
   "devDependencies": {
     "@melonjs/debug-plugin": "^14.5.1"

@@ -19,6 +19,14 @@ const DataManifest = [
   { name: "tileset",         type:"image",   src: "./img/tileset.png" },
   { name: "background",      type:"image",   src: "./img/background.png" },
   { name: "clouds",          type:"image",   src: "./img/clouds.png" },
+  /* Sound effects.
+   * @example
+   * { name: "example_sfx", type: "audio", src: "./sfx/" }
+   */
+  { name: "cling",           type: "audio",  src: "./sfx/" },
+  { name: "die",             type: "audio",  src: "./sfx/" },
+  { name: "enemykill",       type: "audio",  src: "./sfx/" },
+  { name: "jump",            type: "audio",  src: "./sfx/" },
 
   // tileset
   { name: 'tileset', type: 'tsx', src: './map/tileset.json' },
